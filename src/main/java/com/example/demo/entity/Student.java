@@ -4,4 +4,9 @@ public class Student{
     private String name;
     private String email;
     private float cgpa;
+
+    public long getId(){
+        return id;
+    }
+    public 
 }
