@@ -14,16 +14,16 @@ import com.example.demo.service.StudentService;
 public class StudentController {
 
     @Autowired
-    StudentService service;
+    StudentService serv;
 
     @PostMapping("/adddata")
     public Student createData(@RequestBody Student stu){
-        return ser.createData(stu);
+        return serv.createData(stu);
     }
 
     @GetMapping("/fetchrecord")
     public List<Student>fetchRecord(){
-        return ser.fetchRecord();
+        return serv.fetchRecord();
     }
 
 }
