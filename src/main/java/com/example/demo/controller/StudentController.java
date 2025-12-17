@@ -14,7 +14,7 @@ import com.example.demo.service.StudentService;
 public class StudentController {
 
     @Autowired
-    StudentService ser;
+    StudentService service;
 
     @PostMapping("/adddata")
     public Student createData(@RequestBody Student stu){
